@@ -31,7 +31,7 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
     private int strength, second;
     Boolean switchstate;
     private MusicIntentReceiver myReceiver;
-    String[] ring = { "사이렌", "아이폰 알림"};
+    String[] ring = { "사이렌", "아이폰 알림","apex","chimes","playtime","silk"};
     int ring_chk;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,6 +96,10 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
                         switch(ring_chk){
                             case 0:palyer= MediaPlayer.create(Alarm.this,R.raw.siren);break;
                             case 1:palyer= MediaPlayer.create(Alarm.this,R.raw.signal);break;
+                            case 2:palyer= MediaPlayer.create(Alarm.this,R.raw.apex);break;
+                            case 3:palyer= MediaPlayer.create(Alarm.this,R.raw.chimes);break;
+                            case 4:palyer= MediaPlayer.create(Alarm.this,R.raw.playtime);break;
+                            case 5:palyer= MediaPlayer.create(Alarm.this,R.raw.silk);break;
                         }
 
                         palyer.start();

@@ -1,0 +1,197 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:2:1-38:12
+MERGED from [com.android.support.constraint:constraint-layout:2.0.0-beta1] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\07d2701660db2b88231a38072b8a9299\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\b34ee4a5c16f66de913c4d02af198c01\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\c1aa7b288cd285c9c35f269461746640\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\67b18458bbd09ffcc42e1cccbaa42182\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\3433193ce63acd19b1022da600c0ed90\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\b74f441f31ea4a95e478c2da45885077\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\694bdd426f79d91a5739e23630aaaa6d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\66773401b011e589827bc65e9db0efb5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\8cd648a68dfa6cafe4f6d79eb7842377\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\0887a61993f37a221f59332188ec2c1c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\762a6bc8924730a6eeac2adf96ce3450\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\acc896d8dd351b007f8012c2b65c7496\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\3a97d124094570ea8993ef3a73da1f23\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\9c62807ebe50d5844e3f358e556ed8e2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\b1c24497672b50796e26b5c4121e24be\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\7174c2c0ee8ef2b3444d98569ab10d93\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\e8399d0cbbdcc4817c6524dcb85d8a73\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\fd108a84b1636d7ab7c43682688f3642\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\b617f4c45edddf4fb6b30ffdc8210419\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\23ca6927a911fd11c96e089f620541b7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\954a97849b2cf6b0877d266089861d6f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\b63ee8eb55c28228ff5962ebd240b668\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\d89bef2d97baccf7b0b6dc9ad4ee111d\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\aef4c22b735b2e3a3795bcdc75bfe651\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\4d7f400eb7b7b90c9d4c02d9d56e2c33\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\cc987fe57eba0e4dde7bcb4bf3a494a8\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\73fd6457eb56e42b8807485f8d5b73d3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\298a8935113d55ce0b1b32fb6142d837\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:2:1-38:12
+	package
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:3:5-46
+		INJECTED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:2:1-38:12
+		INJECTED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:2:1-38:12
+		INJECTED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:6:22-76
+meta-data#com.kakao.sdk.AppKey
+ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:8:5-10:60
+	android:value
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:10:9-57
+	android:name
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:9:9-44
+uses-permission#android.permission.BLUETOOTH
+ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:12:5-68
+	android:name
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:12:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:13:5-74
+	android:name
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:13:22-71
+uses-permission#android.permission.VIBRATE
+ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:14:5-66
+	android:name
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:14:22-63
+application
+ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:16:5-36:19
+MERGED from [com.android.support.constraint:constraint-layout:2.0.0-beta1] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\07d2701660db2b88231a38072b8a9299\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:2.0.0-beta1] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\07d2701660db2b88231a38072b8a9299\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\e8399d0cbbdcc4817c6524dcb85d8a73\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\e8399d0cbbdcc4817c6524dcb85d8a73\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\fd108a84b1636d7ab7c43682688f3642\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\fd108a84b1636d7ab7c43682688f3642\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\e8399d0cbbdcc4817c6524dcb85d8a73\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:21:9-35
+	android:label
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:19:9-41
+	android:roundIcon
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:20:9-54
+	android:icon
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:18:9-38
+	android:allowBackup
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:17:9-35
+	android:theme
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:22:9-40
+activity#com.example.mirim.myapplication.Town
+ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:23:9-51
+	android:name
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:23:19-39
+activity#com.example.mirim.myapplication.MainActivity
+ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:24:9-30:20
+	android:name
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:24:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:25:13-29:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:28:17-77
+	android:name
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:28:27-74
+activity#com.example.mirim.myapplication.Alarm
+ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:31:9-43
+	android:name
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:31:19-40
+uses-library#org.apache.http.legacy
+ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml:34:13-50
+uses-sdk
+INJECTED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support.constraint:constraint-layout:2.0.0-beta1] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\07d2701660db2b88231a38072b8a9299\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:2.0.0-beta1] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\07d2701660db2b88231a38072b8a9299\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\b34ee4a5c16f66de913c4d02af198c01\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\b34ee4a5c16f66de913c4d02af198c01\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\c1aa7b288cd285c9c35f269461746640\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\c1aa7b288cd285c9c35f269461746640\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\67b18458bbd09ffcc42e1cccbaa42182\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\67b18458bbd09ffcc42e1cccbaa42182\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\3433193ce63acd19b1022da600c0ed90\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\3433193ce63acd19b1022da600c0ed90\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\b74f441f31ea4a95e478c2da45885077\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\b74f441f31ea4a95e478c2da45885077\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\694bdd426f79d91a5739e23630aaaa6d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\694bdd426f79d91a5739e23630aaaa6d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\66773401b011e589827bc65e9db0efb5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\66773401b011e589827bc65e9db0efb5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\8cd648a68dfa6cafe4f6d79eb7842377\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\8cd648a68dfa6cafe4f6d79eb7842377\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\0887a61993f37a221f59332188ec2c1c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\0887a61993f37a221f59332188ec2c1c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\762a6bc8924730a6eeac2adf96ce3450\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\762a6bc8924730a6eeac2adf96ce3450\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\acc896d8dd351b007f8012c2b65c7496\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\acc896d8dd351b007f8012c2b65c7496\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\3a97d124094570ea8993ef3a73da1f23\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\3a97d124094570ea8993ef3a73da1f23\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\9c62807ebe50d5844e3f358e556ed8e2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\9c62807ebe50d5844e3f358e556ed8e2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\b1c24497672b50796e26b5c4121e24be\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\b1c24497672b50796e26b5c4121e24be\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\7174c2c0ee8ef2b3444d98569ab10d93\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\7174c2c0ee8ef2b3444d98569ab10d93\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\e8399d0cbbdcc4817c6524dcb85d8a73\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\e8399d0cbbdcc4817c6524dcb85d8a73\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\fd108a84b1636d7ab7c43682688f3642\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\fd108a84b1636d7ab7c43682688f3642\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\b617f4c45edddf4fb6b30ffdc8210419\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\b617f4c45edddf4fb6b30ffdc8210419\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\23ca6927a911fd11c96e089f620541b7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\23ca6927a911fd11c96e089f620541b7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\954a97849b2cf6b0877d266089861d6f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\954a97849b2cf6b0877d266089861d6f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\b63ee8eb55c28228ff5962ebd240b668\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\b63ee8eb55c28228ff5962ebd240b668\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\d89bef2d97baccf7b0b6dc9ad4ee111d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\d89bef2d97baccf7b0b6dc9ad4ee111d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\aef4c22b735b2e3a3795bcdc75bfe651\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\aef4c22b735b2e3a3795bcdc75bfe651\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\4d7f400eb7b7b90c9d4c02d9d56e2c33\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\4d7f400eb7b7b90c9d4c02d9d56e2c33\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\cc987fe57eba0e4dde7bcb4bf3a494a8\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\cc987fe57eba0e4dde7bcb4bf3a494a8\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\73fd6457eb56e42b8807485f8d5b73d3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\73fd6457eb56e42b8807485f8d5b73d3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\298a8935113d55ce0b1b32fb6142d837\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Samsung\.gradle\caches\transforms-2\files-2.1\298a8935113d55ce0b1b32fb6142d837\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Samsung\AndroidStudioProjects\AlYou-master\app\src\main\AndroidManifest.xml

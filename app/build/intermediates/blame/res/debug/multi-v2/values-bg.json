@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Samsung\\AndroidStudioProjects\\AlYou-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bg\\values-bg.xml",
+            "outputFile": "C:\\Users\\Mirim\\AndroidStudioProjects\\AlYou\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bg\\values-bg.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Samsung\\.gradle\\caches\\transforms-2\\files-2.1\\b34ee4a5c16f66de913c4d02af198c01\\res\\values-bg\\values-bg.xml",
+                    "source": "C:\\Users\\Mirim\\.gradle\\caches\\transforms-2\\files-2.1\\e5b4f986ae83ed2281c250eabde72513\\res\\values-bg\\values-bg.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Samsung\\.gradle\\caches\\transforms-2\\files-2.1\\e8399d0cbbdcc4817c6524dcb85d8a73\\res\\values-bg\\values-bg.xml",
+                    "source": "C:\\Users\\Mirim\\.gradle\\caches\\transforms-2\\files-2.1\\245682c7291070b5c758f20686bfa61e\\res\\values-bg\\values-bg.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

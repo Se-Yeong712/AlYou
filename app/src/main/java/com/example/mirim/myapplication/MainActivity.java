@@ -2,6 +2,7 @@ package com.example.mirim.myapplication;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -23,9 +24,12 @@ public class MainActivity extends AppCompatActivity {
 
     private Button town;
     private Button alarm;
+    private Button push_alarm;
 
-/*    private static final int REQUEST_ENABLE_BT = 10;    //블루투스 활성화상태
-    private BluetoothAdapter bluetoothAdapter;             //블루투스 어댑터*/
+    Context context;
+
+    private static final int REQUEST_ENABLE_BT = 10;    //블루투스 활성화상태
+    private BluetoothAdapter bluetoothAdapter;             //블루투스 어댑터
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,10 @@ public class MainActivity extends AppCompatActivity {
 
         town = (Button)findViewById(R.id.btn_town);
         alarm = (Button)findViewById(R.id.btn_alarm);
+        push_alarm = (Button)findViewById(R.id.push_alarm);
+
+       context = getApplicationContext();
+
 
         town.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,27 +59,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-       /* checkBlueTooth();*/
-
-        try {
-            PackageInfo info = getPackageManager().getPackageInfo("com.example.mirim.myapplication", PackageManager.GET_SIGNATURES);
-            for (Signature signature : info.signatures) {
-                MessageDigest md = MessageDigest.getInstance("SHA");
-                md.update(signature.toByteArray());
-                Log.e("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
+        push_alarm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PushAlarm push = new PushAlarm();
+                push.pushAlarmAreRing(context);
             }
-        } catch (PackageManager.NameNotFoundException e) {
-            e.printStackTrace();
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        }
+        });
+
+       checkBlueTooth();
+
 
     }
 
 
 
 
-    /*public void checkBlueTooth() {
+    public void checkBlueTooth() {
         //어댑터 가져오기
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
@@ -115,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         super.onActivityResult(requestCode, resultCode, data);
-    }*/
+    }
 
 
 

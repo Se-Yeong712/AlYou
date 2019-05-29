@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:2:1-42:12
+ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:2:1-43:12
 MERGED from [com.android.support.constraint:constraint-layout:2.0.0-beta1] C:\Users\Mirim\.gradle\caches\transforms-2\files-2.1\05e3b450be310ff6e259a15c8ad0fa3a\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Mirim\.gradle\caches\transforms-2\files-2.1\e5b4f986ae83ed2281c250eabde72513\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Mirim\.gradle\caches\transforms-2\files-2.1\f476706573b877badf5535dad6c97ec3\AndroidManifest.xml:17:1-22:12
@@ -32,20 +32,20 @@ MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Mirim\.gradle\cache
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Mirim\.gradle\caches\transforms-2\files-2.1\bc0737d6d2080eac8cbf31de08f8d64d\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Mirim\.gradle\caches\transforms-2\files-2.1\f29b4fbc021bb0cb2a6417d02fc0d246\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Mirim\.gradle\caches\transforms-2\files-2.1\a11941f30a643773adbce4f48a1c393c\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:3:5-46
 		INJECTED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:2:1-42:12
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:2:1-42:12
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:2:11-69
@@ -57,34 +57,38 @@ uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:6:5-79
 	android:name
 		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:6:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:7:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:8:5-80
+ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:9:5-80
 	android:name
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:8:22-77
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:9:22-77
 uses-permission#android.permission.WAKE_LOCK
-ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:9:5-68
+ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:10:5-68
 	android:name
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:9:22-65
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:10:22-65
 uses-permission#android.permission.BLUETOOTH
-ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:11:5-68
+ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:12:5-68
 	android:name
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:11:22-65
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:12:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:12:5-74
+ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:13:5-74
 	android:name
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:12:22-71
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:13:22-71
 uses-permission#android.permission.VIBRATE
-ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:13:5-66
+ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:14:5-66
 	android:name
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:13:22-63
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:14:22-63
 meta-data#com.kakao.sdk.AppKey
-ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:15:5-17:60
+ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:16:5-18:60
 	android:value
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:17:9-57
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:18:9-57
 	android:name
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:16:9-44
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:17:9-44
 application
-ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:20:5-40:19
+ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:21:5-41:19
 MERGED from [com.android.support.constraint:constraint-layout:2.0.0-beta1] C:\Users\Mirim\.gradle\caches\transforms-2\files-2.1\05e3b450be310ff6e259a15c8ad0fa3a\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:2.0.0-beta1] C:\Users\Mirim\.gradle\caches\transforms-2\files-2.1\05e3b450be310ff6e259a15c8ad0fa3a\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Mirim\.gradle\caches\transforms-2\files-2.1\245682c7291070b5c758f20686bfa61e\AndroidManifest.xml:22:5-94
@@ -94,45 +98,45 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Mirim\.gra
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Mirim\.gradle\caches\transforms-2\files-2.1\245682c7291070b5c758f20686bfa61e\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:25:9-35
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:26:9-35
 	android:label
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:23:9-41
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:24:9-41
 	android:roundIcon
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:24:9-54
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:25:9-54
 	android:icon
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:22:9-38
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:23:9-38
 	android:allowBackup
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:21:9-35
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:22:9-35
 	android:theme
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:26:9-40
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:27:9-40
 activity#com.example.mirim.myapplication.Town
-ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:27:9-51
+ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:28:9-51
 	android:name
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:27:19-39
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:28:19-39
 activity#com.example.mirim.myapplication.MainActivity
-ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:28:9-34:20
+ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:29:9-35:20
 	android:name
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:28:19-47
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:29:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:29:13-33:29
+ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:30:13-34:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:30:17-69
+ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:30:25-66
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:32:17-77
+ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:33:17-77
 	android:name
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:32:27-74
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:33:27-74
 activity#com.example.mirim.myapplication.Alarm
-ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:35:9-43
+ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:36:9-43
 	android:name
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:35:19-40
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:36:19-40
 uses-library#org.apache.http.legacy
-ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:37:9-39:40
+ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:38:9-40:40
 	android:required
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:39:13-37
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:40:13-37
 	android:name
-		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:38:13-50
+		ADDED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml:39:13-50
 uses-sdk
 INJECTED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Mirim\AndroidStudioProjects\AlYou\app\src\main\AndroidManifest.xml

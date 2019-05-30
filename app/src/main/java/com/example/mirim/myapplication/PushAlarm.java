@@ -3,6 +3,7 @@ package com.example.mirim.myapplication;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Context;
+import android.media.MediaPlayer;
 import android.os.Build;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.NotificationManagerCompat;
@@ -14,15 +15,20 @@ public class PushAlarm {
         createNotificationChannel(context);
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID)
                 .setSmallIcon(R.drawable.icon)
-                .setContentTitle("안녕하세요.")
-                .setContentText("이곳은 텍스트가 들어간다.")
+                .setContentTitle("ALYOU")
+                .setContentText("반경 10M안에 신호등이 있습니다.")
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT);
         //System.out.println("알람이 울려야 하는데");
 
 
+        MediaPlayer palyer= MediaPlayer.create(context,R.raw.siren);
+        palyer.start();
+
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(context);
 
         notificationManager.notify(1, builder.build());
+
+
     }
 
 

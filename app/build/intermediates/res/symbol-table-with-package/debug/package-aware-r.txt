@@ -841,6 +841,7 @@ id bottom
 id bounce
 id btn_alarm
 id btn_apply
+id btn_push
 id btn_town
 id buttonPanel
 id center
@@ -928,7 +929,6 @@ id positionX
 id positionY
 id progress_circular
 id progress_horizontal
-id push_alarm
 id radio
 id ratio
 id rectangles

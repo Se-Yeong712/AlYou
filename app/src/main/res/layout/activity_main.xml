@@ -22,9 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="20dp"
-        android:text="당신의 안전한 하루를 위해서 ALYOU
-신호등이 있으면 알림을 주는 ALYOU
-스몸비 예방을 위한 ALYOU"
+        android:text="당신의 안전한 하루를 위해서 ALYOU"
         android:textColor="#000000"
         />
 
@@ -52,10 +50,12 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/push_alarm"
+        android:id="@+id/btn_push"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="push alarm"/>
+        android:text="START"/>
+
+
 
 </LinearLayout>

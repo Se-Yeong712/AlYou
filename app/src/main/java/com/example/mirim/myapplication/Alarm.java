@@ -85,14 +85,6 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
 
                 int state = intent.getIntExtra("state", -1);
 
-                switch(state) {
-
-                    case 0: // 헤드셋 해제
-                        Toast.makeText(Alarm.this,"이어폰과 연결되어 있지 않습니다",Toast.LENGTH_LONG).show();
-                        break;
-
-                    case 1: // 헤드셋 연결
-
                         MediaPlayer palyer=MediaPlayer.create(Alarm.this,R.raw.siren);
                         switch(ring_chk){
                             case 0:palyer= MediaPlayer.create(Alarm.this,R.raw.siren);break;
@@ -104,8 +96,6 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
                         }
 
                         palyer.start();
-                        break;
-                }
             }
         }
     }
@@ -115,7 +105,6 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
 
     public void Vibration(){
         switchstate = sw.isChecked();
-        //Log.e("fdsf",String.valueOf(switchstate));
 
         if(switchstate==true) {
 
@@ -168,9 +157,6 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
             long[] mVibratePattern = new long[]{((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400,((11 - strength) * 300), 600,((11 - strength) * 300),400,((11 - strength) * 300), 600};
             vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
         }
-
-
-
 
 
         Toast.makeText(Alarm.this,"설정 완료",Toast.LENGTH_LONG).show();

@@ -26,6 +26,7 @@ import android.view.View;
 import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.io.IOException;
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     private Button alarm;
     private Button push_alarm;
 
+
     Context context;
     ArrayAdapter<Object> mArrayAdapter;
 
@@ -60,6 +62,8 @@ public class MainActivity extends AppCompatActivity {
         town = (Button) findViewById(R.id.btn_town);
         alarm = (Button) findViewById(R.id.btn_alarm);
         push_alarm = (Button) findViewById(R.id.btn_push);
+
+
 
         context = getApplicationContext();
 
@@ -132,6 +136,10 @@ public class MainActivity extends AppCompatActivity {
 
                 PushAlarm push = new PushAlarm();
                 push.pushAlarmAreRing(context);
+
+                /*Alarm vib = new Alarm();
+                vib.Vibration();*/
+
             }
 
 

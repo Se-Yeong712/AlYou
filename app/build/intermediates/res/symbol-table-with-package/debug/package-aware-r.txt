@@ -771,7 +771,8 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
-drawable btn
+drawable btn_1
+drawable btn_2
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable icon
@@ -895,6 +896,7 @@ id icon_group
 id ifRoom
 id ignore
 id image
+id imglogo
 id info
 id invisible
 id italic
@@ -907,7 +909,6 @@ id line3
 id linear
 id listMode
 id list_item
-id map_view
 id message
 id middle
 id multiply
@@ -1000,6 +1001,7 @@ id triangle
 id uniform
 id up
 id useLogo
+id webview
 id withText
 id wrap
 id wrap_content

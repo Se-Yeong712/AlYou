@@ -55,6 +55,7 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
         myReceiver = new MusicIntentReceiver();
 
         seekBar.setProgress(5);
+        timeSeek.setProgress(5);
 
         btn_apply.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.O)
@@ -114,7 +115,7 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
 
     public void Vibration(){
         switchstate = sw.isChecked();
-        Log.e("fdsf",String.valueOf(switchstate));
+        //Log.e("fdsf",String.valueOf(switchstate));
 
         if(switchstate==true) {
 
@@ -125,21 +126,53 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
 
         strength = (int)seekBar.getProgress();
         second = (int)timeSeek.getProgress();
-        long[] mVibratePattern = new long[]{((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400 ,((11 - strength) * 300), 600};
-        //pat = Vibtime(strength);
-        //VibrationEffect effect = VibrationEffect.createWaveform(pat, -1);
-        //VibrationEffect effect = VibrationEffect.createWaveform(pat, VibrationEffect.DEFAULT_AMPLITUDE);
+
+        if(second==1){
+            long[] mVibratePattern = new long[]{((11 - strength) * 300),400 };
+
+            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
+        }
+        else if(second==2){
+            long[] mVibratePattern = new long[]{((11 - strength) * 300),400 ,((11 - strength) * 300), 600};
+            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
+        }
+        else if(second==3){
+            long[] mVibratePattern = new long[]{((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400};
+            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
+        }
+        else if(second==4){
+            long[] mVibratePattern = new long[]{((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400 ,((11 - strength) * 300), 600};
+            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
+        }
+        else if(second==5){
+            long[] mVibratePattern = new long[]{((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400};
+            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
+        }
+        else if(second==6){
+            long[] mVibratePattern = new long[]{((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400 ,((11 - strength) * 300), 600};
+            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
+        }
+        else if(second==7){
+            long[] mVibratePattern = new long[]{((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400};
+            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
+        }
+        else if(second==8){
+            long[] mVibratePattern = new long[]{((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400,((11 - strength) * 300), 600};
+            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
+        }
+        else if(second==9){
+            long[] mVibratePattern = new long[]{((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400,((11 - strength) * 300), 600,((11 - strength) * 300),400};
+            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
+        }
+        else{
+            long[] mVibratePattern = new long[]{((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400 ,((11 - strength) * 300), 600,((11 - strength) * 300),400,((11 - strength) * 300), 600,((11 - strength) * 300),400,((11 - strength) * 300), 600};
+            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
+        }
 
 
-        //vib.vibrate(VibrationEffect.createOneShot(500, VibrationEffect.DEFAULT_AMPLITUDE))
-        vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
-
-        //vib.vibrate(VibrationEffect.createOneShot(strength*1000, VibrationEffect.DEFAULT_AMPLITUDE));
 
 
 
-
-        //진동 지속시간 설정
         Toast.makeText(Alarm.this,"설정 완료",Toast.LENGTH_LONG).show();
         finish();
     }

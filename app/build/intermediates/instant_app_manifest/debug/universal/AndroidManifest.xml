@@ -17,6 +17,7 @@
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <meta-data
         android:name="com.kakao.sdk.AppKey"
@@ -31,7 +32,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
         <activity android:name="com.example.mirim.myapplication.Town" />
         <activity android:name="com.example.mirim.myapplication.MainActivity" >
             <intent-filter>
@@ -45,11 +47,6 @@
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
-
-        <provider
-            android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="com.example.mirim.myapplication.com.android.tools.ir.server.InstantRunContentProvider"
-            android:multiprocess="true" />
     </application>
 
 </manifest>

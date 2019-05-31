@@ -7,22 +7,28 @@ import android.media.MediaPlayer;
 import android.os.Build;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.NotificationManagerCompat;
+import android.util.Log;
 
 public class PushAlarm {
     private String CHANNEL_ID = "1";
+    long[] mVibratePattern = new long[]{((11 - 5) * 300),400 };
 
     public void pushAlarmAreRing(Context context){ //알람 함수
         createNotificationChannel(context);
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID)
                 .setSmallIcon(R.drawable.icon)
                 .setContentTitle("ALYOU")
-                .setContentText("반경 10M안에 신호등이 있습니다.")
-                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
+                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+                .setContentText("반경 10M안에 신호등이 있습니다.");
         //System.out.println("알람이 울려야 하는데");
 
 
         MediaPlayer palyer= MediaPlayer.create(context,R.raw.siren);
         palyer.start();
+
+
+
+        builder.setVibrate(new long[]{0,3000});
 
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(context);
 

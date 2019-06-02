@@ -37,6 +37,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".Alarm" />
+        <service android:name=".Bluetooth">
+            <intent-filter>
+                <action android:name="com.example.mirim.myapplication"/>
+            </intent-filter>
+        </service>
 
         <uses-library
             android:name="org.apache.http.legacy"

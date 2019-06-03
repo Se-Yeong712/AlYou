@@ -10,11 +10,15 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
 import android.os.Handler;
 import android.os.Message;
+import android.os.VibrationEffect;
+import android.os.Vibrator;
+import android.preference.PreferenceManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
@@ -47,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
     private Button stop;
 
 
+    private int strength=0;
+    private  int second=0;
+    private Vibrator vib;
     Context context;
     ArrayAdapter<Object> mArrayAdapter;
 
@@ -59,6 +66,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+/*        Intent intent = getIntent();*/
+/*        strength = intent.getExtras().getInt("strength");
+        second = intent.getExtras().getInt("second");*/
 
         town = (Button) findViewById(R.id.btn_town);
         alarm = (Button) findViewById(R.id.btn_alarm);
@@ -87,31 +98,30 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-            town.setOnClickListener(new View.OnClickListener() {
+        town.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Town.class);
+                startActivity(intent);
+            }
+        });
+
+        alarm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Alarm.class);
+                startActivity(intent);
+            }
+        });
+
+        start.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(MainActivity.this, Town.class);
-                    startActivity(intent);
-                }
-            });
-
-            alarm.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(MainActivity.this, Alarm.class);
-                    startActivity(intent);
-                }
-            });
-
-            start.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    Intent intentService = new Intent(getApplicationContext(),Bluetooth.class);
-                    //intentService.putExtra("bluetoothAdapter",bluetoothAdapter);
-                    startService(intentService);
+               Intent intentService = new Intent(getApplicationContext(),Bluetooth.class);
+              startService(intentService);
 
                     CheckBluetooth();
+
 
                 }
             });
@@ -120,11 +130,11 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
 
-                    Intent intentService = new Intent(getApplicationContext(),Bluetooth.class);
+                    Intent intentService = new Intent(getApplicationContext(), Bluetooth.class);
                     stopService(intentService);
-
                 }
             });
+
 
         registerReceiver(receiver,new IntentFilter(BluetoothDevice.ACTION_FOUND));
 
@@ -151,6 +161,7 @@ public class MainActivity extends AppCompatActivity {
                 PushAlarm push = new PushAlarm();
                 push.pushAlarmAreRing(context);
 
+                Vibration();
                 /*Alarm vib = new Alarm();
                 vib.Vibration();*/
 
@@ -227,6 +238,66 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
+
+
+
+
+
+
+
+    public void Vibration() {
+        SharedPreferences sf = getSharedPreferences("appData", MODE_PRIVATE);
+        strength = sf.getInt("strength", 1);
+        second = sf.getInt("second", 1);
+
+        Toast.makeText(getApplicationContext(), "11만 아니면 돼 : " + strength + second, Toast.LENGTH_SHORT).show();
+
+
+        vib = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+
+
+
+
+
+/*        strength = (int)seekBar.getProgress();
+        second = (int)timeSeek.getProgress();*/
+
+        if (second == 1) {
+            long[] mVibratePattern = new long[]{((11 - strength) * 300), 400};
+
+            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else if (second == 2) {
+            long[] mVibratePattern = new long[]{((11 - strength) * 300), 400, ((11 - strength) * 300), 600};
+            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else if (second == 3) {
+            long[] mVibratePattern = new long[]{((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400};
+            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else if (second == 4) {
+            long[] mVibratePattern = new long[]{((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600};
+            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else if (second == 5) {
+            long[] mVibratePattern = new long[]{((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400};
+            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else if (second == 6) {
+            long[] mVibratePattern = new long[]{((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600};
+            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else if (second == 7) {
+            long[] mVibratePattern = new long[]{((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400};
+            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else if (second == 8) {
+            long[] mVibratePattern = new long[]{((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600};
+            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else if (second == 9) {
+            long[] mVibratePattern = new long[]{((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400};
+            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else {
+            long[] mVibratePattern = new long[]{((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600};
+            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
+        }
+
+
+    }
 
 
 

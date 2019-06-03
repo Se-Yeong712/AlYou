@@ -1,0 +1,19 @@
+#Internal package file, do not edit.
+#Mon Jun 03 20:01:16 KST 2019
+1.base=C\:\\Users\\Mirim\\AndroidStudioProjects\\AlYou\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
+2.path=lib/armeabi-v7a/libDaumMapEngineApi.so
+0.baseType=DIRECTORY
+3.baseType=DIRECTORY
+2.base=C\:\\Users\\Mirim\\AndroidStudioProjects\\AlYou\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
+3.set=DEX
+2.set=NATIVE_RESOURCE
+1.baseType=DIRECTORY
+3.path=classes.dex
+count=4
+1.set=NATIVE_RESOURCE
+0.path=classes.dex
+3.base=C\:\\Users\\Mirim\\AndroidStudioProjects\\AlYou\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
+0.set=DEX
+0.base=C\:\\Users\\Mirim\\AndroidStudioProjects\\AlYou\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
+2.baseType=DIRECTORY
+1.path=lib/armeabi/libDaumMapEngineApi.so

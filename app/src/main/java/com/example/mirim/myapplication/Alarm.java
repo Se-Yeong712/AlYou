@@ -4,10 +4,12 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
+import android.preference.PreferenceManager;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -30,6 +32,8 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
     private Vibrator vib;
     private int strength, second;
     Boolean switchstate;
+
+
     private MusicIntentReceiver myReceiver;
     String[] ring = { "사이렌", "아이폰 알림","apex","chimes","playtime","silk"};
     int ring_chk;
@@ -52,17 +56,37 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
         btn_apply = (Button)findViewById(R.id.btn_apply);
         vib = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
 
+
+
         myReceiver = new MusicIntentReceiver();
 
-        seekBar.setProgress(5);
-        timeSeek.setProgress(5);
+/*        seekBar.setProgress(5);
+        timeSeek.setProgress(5);*/
+        strength = (int)seekBar.getProgress();
+        second = (int)timeSeek.getProgress();
+
+        SharedPreferences sharedPreferences = getSharedPreferences("appData",MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt("strength",strength);
+        editor.putInt("second",second);
+        //editor.commit();
 
         btn_apply.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.O)
+
             @Override
             public void onClick(View v) {
 
+
                 Vibration();
+
+                SharedPreferences sharedPreferences = getSharedPreferences("appData",MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putInt("strength",strength);
+                editor.putInt("second",second);
+                editor.commit();
+
+
+
             }
         });
 
@@ -85,17 +109,17 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
 
                 int state = intent.getIntExtra("state", -1);
 
-                        MediaPlayer palyer=MediaPlayer.create(Alarm.this,R.raw.siren);
-                        switch(ring_chk){
-                            case 0:palyer= MediaPlayer.create(Alarm.this,R.raw.siren);break;
-                            case 1:palyer= MediaPlayer.create(Alarm.this,R.raw.signal);break;
-                            case 2:palyer= MediaPlayer.create(Alarm.this,R.raw.apex);break;
-                            case 3:palyer= MediaPlayer.create(Alarm.this,R.raw.chimes);break;
-                            case 4:palyer= MediaPlayer.create(Alarm.this,R.raw.playtime);break;
-                            case 5:palyer= MediaPlayer.create(Alarm.this,R.raw.silk);break;
-                        }
+                MediaPlayer palyer=MediaPlayer.create(Alarm.this,R.raw.siren);
+                switch(ring_chk){
+                    case 0:palyer= MediaPlayer.create(Alarm.this,R.raw.siren);break;
+                    case 1:palyer= MediaPlayer.create(Alarm.this,R.raw.signal);break;
+                    case 2:palyer= MediaPlayer.create(Alarm.this,R.raw.apex);break;
+                    case 3:palyer= MediaPlayer.create(Alarm.this,R.raw.chimes);break;
+                    case 4:palyer= MediaPlayer.create(Alarm.this,R.raw.playtime);break;
+                    case 5:palyer= MediaPlayer.create(Alarm.this,R.raw.silk);break;
+                }
 
-                        palyer.start();
+                palyer.start();
             }
         }
     }
@@ -104,6 +128,8 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
 
 
     public void Vibration(){
+        /*vib = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);*/
+
         switchstate = sw.isChecked();
 
         if(switchstate==true) {

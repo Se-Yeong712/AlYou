@@ -1,4 +1,7 @@
-#Fri May 31 13:57:40 KST 2019
-base.0=C\:\\Users\\Mirim\\AndroidStudioProjects\\AlYou\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+#Mon Jun 03 19:49:09 KST 2019
+base.0=C\:\\Users\\Mirim\\AndroidStudioProjects\\Alyou3\\AlYou\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
+path.1=classes.dex
+renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
+base.1=C\:\\Users\\Mirim\\AndroidStudioProjects\\Alyou3\\AlYou\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out

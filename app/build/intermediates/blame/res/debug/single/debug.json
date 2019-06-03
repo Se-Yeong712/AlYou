@@ -1484,12 +1484,12 @@
         "source": "C:\\Users\\Mirim\\.gradle\\caches\\transforms-2\\files-2.1\\e5b4f986ae83ed2281c250eabde72513\\res\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
-        "merged": "C:\\Users\\Mirim\\AndroidStudioProjects\\AlYou\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
-        "source": "C:\\Users\\Mirim\\.gradle\\caches\\transforms-2\\files-2.1\\e5b4f986ae83ed2281c250eabde72513\\res\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png"
-    },
-    {
         "merged": "C:\\Users\\Mirim\\AndroidStudioProjects\\AlYou\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_btn_1.xml.flat",
         "source": "C:\\Users\\Mirim\\AndroidStudioProjects\\AlYou\\app\\src\\main\\res\\drawable-v24\\btn_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\Mirim\\AndroidStudioProjects\\AlYou\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
+        "source": "C:\\Users\\Mirim\\.gradle\\caches\\transforms-2\\files-2.1\\e5b4f986ae83ed2281c250eabde72513\\res\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
         "merged": "C:\\Users\\Mirim\\AndroidStudioProjects\\AlYou\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",

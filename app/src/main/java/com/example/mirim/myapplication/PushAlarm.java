@@ -23,8 +23,8 @@ public class PushAlarm {
         //System.out.println("알람이 울려야 하는데");
 
 
-        MediaPlayer palyer= MediaPlayer.create(context,R.raw.siren);
-        palyer.start();
+/*        MediaPlayer palyer= MediaPlayer.create(context,R.raw.siren);
+        palyer.start();*/
 
 
 

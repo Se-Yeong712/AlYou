@@ -43,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
 
     private Button town;
     private Button alarm;
-    private Button push_alarm;
+    private Button start;
+    private Button stop;
 
 
     Context context;
@@ -61,8 +62,8 @@ public class MainActivity extends AppCompatActivity {
 
         town = (Button) findViewById(R.id.btn_town);
         alarm = (Button) findViewById(R.id.btn_alarm);
-        push_alarm = (Button) findViewById(R.id.btn_push);
-
+        start = (Button) findViewById(R.id.btn_start);
+        stop = (Button) findViewById(R.id.btn_stop);
 
 
         context = getApplicationContext();
@@ -102,16 +103,29 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
-            push_alarm.setOnClickListener(new View.OnClickListener() {
+            start.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 
+                    Intent intentService = new Intent(getApplicationContext(),Bluetooth.class);
+                    //intentService.putExtra("bluetoothAdapter",bluetoothAdapter);
+                    startService(intentService);
+
                     CheckBluetooth();
-
-
 
                 }
             });
+
+            stop.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent intentService = new Intent(getApplicationContext(),Bluetooth.class);
+                    stopService(intentService);
+
+                }
+            });
+
         registerReceiver(receiver,new IntentFilter(BluetoothDevice.ACTION_FOUND));
 
 
@@ -183,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
             //장치가 블루투스를 지원
             if(bluetoothAdapter.isEnabled()){
                 //블루투스 활성상태
-                searchDevice();
+                Toast.makeText(this,"블루투스 활성상태입니다",Toast.LENGTH_LONG).show();
 
             }
             else{
@@ -202,7 +216,6 @@ public class MainActivity extends AppCompatActivity {
                 if(resultCode == RESULT_OK) {
                     //활성상태 -> 연결
                     Toast.makeText(this,"블루투스 활성상태",Toast.LENGTH_LONG).show();
-                    searchDevice();
                 }
                 else if(resultCode == RESULT_CANCELED) {
                     // 블루투스가 비활성상태
@@ -212,21 +225,6 @@ public class MainActivity extends AppCompatActivity {
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
-
-    public void searchDevice(){
-
-        bluetoothAdapter.startDiscovery();
-
-
-    }
-
-
-
-
-
-
-
-
 
 
 

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri May 31 11:03:11 KST 2019
+#Mon Jun 03 19:11:23 KST 2019
 1.base=C\:\\Users\\Mirim\\AndroidStudioProjects\\AlYou\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
 2.path=lib/armeabi-v7a/libDaumMapEngineApi.so
 0.baseType=DIRECTORY

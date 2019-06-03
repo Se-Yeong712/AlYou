@@ -842,7 +842,8 @@ id bottom
 id bounce
 id btn_alarm
 id btn_apply
-id btn_push
+id btn_start
+id btn_stop
 id btn_town
 id buttonPanel
 id center

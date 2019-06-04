@@ -64,7 +64,7 @@ public class Bluetooth extends Service {
 
     public void stopBluetooth(){
         timer.cancel();
-        Log.d("test","timer cancel");
+        Log.d("test","서비스 timer cancel");
 
     }
 

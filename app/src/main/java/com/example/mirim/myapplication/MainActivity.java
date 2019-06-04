@@ -41,6 +41,8 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.UUID;
 
 public class MainActivity extends AppCompatActivity {
@@ -148,32 +150,48 @@ public class MainActivity extends AppCompatActivity {
 
             Toast.makeText(getApplicationContext(),"onReceive", Toast.LENGTH_LONG).show();
             //String action = intent.getAction();
-            //if(BluetoothDevice.ACTION_FOUND.equals(action)){
-            final BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-            //if(device.getName().equalsIgnoreCase("Galaxy J5 (2016)")){
+            getRssi(context,intent);
+            /*final BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
+            if(device.getName().equalsIgnoreCase("Galaxy J5 (2016)")){
+                Toast.makeText(getApplicationContext(),"기기선택", Toast.LENGTH_LONG).show();
 
-            int rssi = intent.getShortExtra(device.EXTRA_RSSI, Short.MIN_VALUE);
-            //txt1.setText("name : " + device.getName() + " rssi: " + rssi);
-            Toast.makeText(getApplicationContext(),"name : " + device.getName() +  "  RSSI: " + rssi + "dBm", Toast.LENGTH_SHORT).show();
-
-            if(rssi > -60){
-
-                PushAlarm push = new PushAlarm();
-                push.pushAlarmAreRing(context);
-
-                Vibration();
-                /*Alarm vib = new Alarm();
-                vib.Vibration();*/
-
-            }
+            }*/
 
 
-
-            //}
         }
 
     };
 
+
+    public void getRssi(Context context, final Intent intent){
+        final BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
+        TimerTask Ttask = new TimerTask() {
+            @Override
+            public void run() {
+                int rssi = intent.getShortExtra(device.EXTRA_RSSI, Short.MIN_VALUE);
+                Toast.makeText(getApplicationContext(),"name : " + device.getName() +  "  RSSI: " + rssi + "dBm", Toast.LENGTH_SHORT).show();
+
+                if(rssi > -60){
+
+                /*PushAlarm push = new PushAlarm();
+                push.pushAlarmAreRing(context);*/
+
+                    Vibration();
+
+                }
+            }
+        };
+        Timer timer1 = new Timer();
+        timer1.schedule(Ttask,0,5000);
+
+
+        //if(device.getName().equalsIgnoreCase("Galaxy J5 (2016)")){
+
+
+
+        //}
+
+    }
 
 
     @Override
@@ -241,27 +259,16 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
-
-
-
     public void Vibration() {
         SharedPreferences sf = getSharedPreferences("appData", MODE_PRIVATE);
         strength = sf.getInt("strength", 1);
         second = sf.getInt("second", 1);
 
-        Toast.makeText(getApplicationContext(), "11만 아니면 돼 : " + strength + second, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getApplicationContext(), "11만 아니면 돼 : " + strength + second, Toast.LENGTH_SHORT).show();
 
 
         vib = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
-
-
-
-
-/*        strength = (int)seekBar.getProgress();
-        second = (int)timeSeek.getProgress();*/
 
         if (second == 1) {
             long[] mVibratePattern = new long[]{((11 - strength) * 300), 400};

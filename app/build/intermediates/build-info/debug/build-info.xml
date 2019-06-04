@@ -5,31 +5,32 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
+    ir-eligibility="CLASS_ADDED"
     plugin-version="3.4.1"
-    timestamp="1559236057153"
+    timestamp="1559570579578"
     token="-3461233355531056898"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="431" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="101" />
     <task
         name="verifier"
-        duration="0" />
+        duration="12" />
 
     <artifact
-        location="C:\AndroidProject\AlYou\app\build\intermediates\resources\instant-run\debug\resources-universal-debug.apk"
+        location="C:\AndroidProject\AlYou\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1559234785087"
+        timestamp="1559570357882"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\AndroidProject\AlYou\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
@@ -73,19 +74,11 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1559235973189"
+        ir-eligibility="CLASS_ADDED"
+        timestamp="1559570579578"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\AndroidProject\AlYou\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1559236057153"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\AndroidProject\AlYou\app\build\intermediates\resources\instant-run\debug\resources-universal-debug.apk"
             type="SPLIT" />
     </build>
 

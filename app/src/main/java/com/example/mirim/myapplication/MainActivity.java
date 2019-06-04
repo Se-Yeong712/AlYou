@@ -147,16 +147,25 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onReceive(Context context, final Intent intent) {
+            Log.d("test","서비스 onReceive");
 
-            Toast.makeText(getApplicationContext(),"onReceive", Toast.LENGTH_LONG).show();
+            //Toast.makeText(getApplicationContext(),"onReceive", Toast.LENGTH_LONG).show();
             //String action = intent.getAction();
-            getRssi(context,intent);
-            /*final BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-            if(device.getName().equalsIgnoreCase("Galaxy J5 (2016)")){
-                Toast.makeText(getApplicationContext(),"기기선택", Toast.LENGTH_LONG).show();
+            final BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
+            String device_name = device.getName();
 
-            }*/
 
+
+            if(device_name != null && device_name.length() > 4){
+                Log.d("Bluetooth Name: ", device_name);
+                if(device_name.substring(0,3).equals("Gal")){
+                    Log.d("test","서비스 Galaxy if문 안");
+                    //bluetooth_device.add(device);
+                    getRssi(context,intent);
+
+
+                }
+            }
 
         }
 
@@ -165,7 +174,31 @@ public class MainActivity extends AppCompatActivity {
 
     public void getRssi(Context context, final Intent intent){
         final BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-        TimerTask Ttask = new TimerTask() {
+
+        int rssi = intent.getShortExtra(device.EXTRA_RSSI, Short.MIN_VALUE);
+        Log.d("test","서비스 name : " + device.getName() + "  RSSI: " + rssi + "dBm");
+
+        if (rssi > -60) {
+
+                try {
+                    rssi = intent.getShortExtra(device.EXTRA_RSSI, Short.MIN_VALUE);
+                    Log.d("test","서비스 name : " + device.getName() + "  RSSI: " + rssi + "dBm");
+                    Thread.sleep(10000);
+                    rssi = intent.getShortExtra(device.EXTRA_RSSI, Short.MIN_VALUE);
+                    Log.d("test","서비스 name : " + device.getName() + "  RSSI: " + rssi + "dBm");
+                    Toast.makeText(getApplicationContext(), "name : " + device.getName() + "  RSSI: " + rssi + "dBm", Toast.LENGTH_SHORT).show();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+
+            }
+
+
+            PushAlarm push = new PushAlarm();
+            push.pushAlarmAreRing(getApplicationContext());
+        }
+    }
+
+        /*TimerTask Ttask = new TimerTask() {
             @Override
             public void run() {
                 int rssi = intent.getShortExtra(device.EXTRA_RSSI, Short.MIN_VALUE);
@@ -173,16 +206,16 @@ public class MainActivity extends AppCompatActivity {
 
                 if(rssi > -60){
 
-                /*PushAlarm push = new PushAlarm();
-                push.pushAlarmAreRing(context);*/
+                PushAlarm push = new PushAlarm();
+                push.pushAlarmAreRing(getApplicationContext());
 
-                    Vibration();
 
                 }
+
             }
         };
         Timer timer1 = new Timer();
-        timer1.schedule(Ttask,0,5000);
+        timer1.schedule(Ttask,0,5000);*/
 
 
         //if(device.getName().equalsIgnoreCase("Galaxy J5 (2016)")){
@@ -191,7 +224,6 @@ public class MainActivity extends AppCompatActivity {
 
         //}
 
-    }
 
 
     @Override
@@ -259,52 +291,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public void Vibration() {
-        SharedPreferences sf = getSharedPreferences("appData", MODE_PRIVATE);
-        strength = sf.getInt("strength", 1);
-        second = sf.getInt("second", 1);
-
-        //Toast.makeText(getApplicationContext(), "11만 아니면 돼 : " + strength + second, Toast.LENGTH_SHORT).show();
-
-
-        vib = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-
-
-        if (second == 1) {
-            long[] mVibratePattern = new long[]{((11 - strength) * 300), 400};
-
-            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
-        } else if (second == 2) {
-            long[] mVibratePattern = new long[]{((11 - strength) * 300), 400, ((11 - strength) * 300), 600};
-            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
-        } else if (second == 3) {
-            long[] mVibratePattern = new long[]{((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400};
-            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
-        } else if (second == 4) {
-            long[] mVibratePattern = new long[]{((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600};
-            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
-        } else if (second == 5) {
-            long[] mVibratePattern = new long[]{((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400};
-            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
-        } else if (second == 6) {
-            long[] mVibratePattern = new long[]{((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600};
-            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
-        } else if (second == 7) {
-            long[] mVibratePattern = new long[]{((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400};
-            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
-        } else if (second == 8) {
-            long[] mVibratePattern = new long[]{((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600};
-            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
-        } else if (second == 9) {
-            long[] mVibratePattern = new long[]{((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400};
-            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
-        } else {
-            long[] mVibratePattern = new long[]{((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600, ((11 - strength) * 300), 400, ((11 - strength) * 300), 600};
-            vib.vibrate(VibrationEffect.createWaveform(mVibratePattern, VibrationEffect.DEFAULT_AMPLITUDE));
-        }
-
-
-    }
 
 
 

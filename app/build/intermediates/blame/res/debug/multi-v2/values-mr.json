@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\AndroidProject\\AlYou\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mr\\values-mr.xml",
+            "outputFile": "C:\\Users\\Mirim\\AndroidStudioProjects\\AlYou\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mr\\values-mr.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\이세영\\.gradle\\caches\\transforms-2\\files-2.1\\a2d766c94f1eba2bd83fe6a842dd5277\\res\\values-mr\\values-mr.xml",
+                    "source": "C:\\Users\\Mirim\\.gradle\\caches\\transforms-2\\files-2.1\\e5b4f986ae83ed2281c250eabde72513\\res\\values-mr\\values-mr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\이세영\\.gradle\\caches\\transforms-2\\files-2.1\\a9e7b8332b309ba5c98a1f6c0ffb9324\\res\\values-mr\\values-mr.xml",
+                    "source": "C:\\Users\\Mirim\\.gradle\\caches\\transforms-2\\files-2.1\\245682c7291070b5c758f20686bfa61e\\res\\values-mr\\values-mr.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

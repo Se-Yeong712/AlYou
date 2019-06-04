@@ -30,7 +30,7 @@ public class Town extends AppCompatActivity {
         mWebSettings = webview.getSettings();
         mWebSettings.setJavaScriptEnabled(true);
 
-        webview.loadUrl("http://lsysy712.dothome.co.kr/webview.html ");
+        webview.loadUrl("https://juhyun110701.000webhostapp.com/alyou/ ");
 
 
     }

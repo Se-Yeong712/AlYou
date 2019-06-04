@@ -32,7 +32,7 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
     private Vibrator vib;
     private int strength, second;
     Boolean switchstate;
-
+    MediaPlayer palyer;
 
     private MusicIntentReceiver myReceiver;
     String[] ring = { "사이렌", "아이폰 알림","apex","chimes","playtime","silk"};
@@ -41,7 +41,6 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm);
-
         Spinner spin = findViewById(R.id.spinner);
         spin.setOnItemSelectedListener(this);
 
@@ -52,7 +51,6 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
 
         seekBar = (SeekBar)findViewById(R.id.seekBar);
         timeSeek = (SeekBar)findViewById(R.id.timeSeek);
-        sw = (Switch)findViewById(R.id.sw);
         btn_apply = (Button)findViewById(R.id.btn_apply);
         vib = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
 
@@ -84,6 +82,7 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
                 editor.putInt("strength",strength);
                 editor.putInt("second",second);
                 editor.commit();
+                palyer.start();
 
 
 
@@ -95,6 +94,14 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         ring_chk=position;
+        switch(ring_chk){
+            case 0:palyer= MediaPlayer.create(Alarm.this,R.raw.siren);break;
+            case 1:palyer= MediaPlayer.create(Alarm.this,R.raw.signal);break;
+            case 2:palyer= MediaPlayer.create(Alarm.this,R.raw.apex);break;
+            case 3:palyer= MediaPlayer.create(Alarm.this,R.raw.chimes);break;
+            case 4:palyer= MediaPlayer.create(Alarm.this,R.raw.playtime);break;
+            case 5:palyer= MediaPlayer.create(Alarm.this,R.raw.silk);break;
+        }
     }
 
     @Override
@@ -105,22 +112,14 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
     private class MusicIntentReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
-            if (intent.getAction().equals(Intent.ACTION_HEADSET_PLUG)) {
 
                 int state = intent.getIntExtra("state", -1);
 
-                MediaPlayer palyer=MediaPlayer.create(Alarm.this,R.raw.siren);
-                switch(ring_chk){
-                    case 0:palyer= MediaPlayer.create(Alarm.this,R.raw.siren);break;
-                    case 1:palyer= MediaPlayer.create(Alarm.this,R.raw.signal);break;
-                    case 2:palyer= MediaPlayer.create(Alarm.this,R.raw.apex);break;
-                    case 3:palyer= MediaPlayer.create(Alarm.this,R.raw.chimes);break;
-                    case 4:palyer= MediaPlayer.create(Alarm.this,R.raw.playtime);break;
-                    case 5:palyer= MediaPlayer.create(Alarm.this,R.raw.silk);break;
-                }
 
-                palyer.start();
-            }
+
+
+
+
         }
     }
 
@@ -128,7 +127,7 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
 
 
     public void Vibration(){
-        /*vib = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);*/
+        *//*vib = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);*//*
 
         switchstate = sw.isChecked();
 
@@ -189,3 +188,4 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
         finish();
     }
 }
+

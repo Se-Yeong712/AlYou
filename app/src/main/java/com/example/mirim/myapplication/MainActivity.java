@@ -178,24 +178,17 @@ public class MainActivity extends AppCompatActivity {
         int rssi = intent.getShortExtra(device.EXTRA_RSSI, Short.MIN_VALUE);
         Log.d("test","서비스 name : " + device.getName() + "  RSSI: " + rssi + "dBm");
 
-        if (rssi > -60) {
 
-                try {
-                    rssi = intent.getShortExtra(device.EXTRA_RSSI, Short.MIN_VALUE);
-                    Log.d("test","서비스 name : " + device.getName() + "  RSSI: " + rssi + "dBm");
-                    Thread.sleep(10000);
-                    rssi = intent.getShortExtra(device.EXTRA_RSSI, Short.MIN_VALUE);
-                    Log.d("test","서비스 name : " + device.getName() + "  RSSI: " + rssi + "dBm");
-                    Toast.makeText(getApplicationContext(), "name : " + device.getName() + "  RSSI: " + rssi + "dBm", Toast.LENGTH_SHORT).show();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+        //if (rssi > -60) {
+            Intent intentService = new Intent(getApplicationContext(),Bluetooth.class);
+            stopService(intentService);
 
-            }
-
+            Log.d("test","서비스 name : " + device.getName() + "  RSSI: " + rssi + "dBm");
+            Toast.makeText(getApplicationContext(), "name : " + device.getName() + "  RSSI: " + rssi + "dBm", Toast.LENGTH_SHORT).show();
 
             PushAlarm push = new PushAlarm();
             push.pushAlarmAreRing(getApplicationContext());
-        }
+        //}
     }
 
         /*TimerTask Ttask = new TimerTask() {

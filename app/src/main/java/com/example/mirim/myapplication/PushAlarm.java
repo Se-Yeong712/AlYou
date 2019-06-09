@@ -19,6 +19,7 @@ public class PushAlarm {
     private Vibrator vib;
     long[] mVibratePattern = new long[]{((11 - 5) * 300),400 };
     private Context mContext;
+    MediaPlayer palyer;
 
     public void pushAlarmAreRing(Context context){ //알람 함수
         createNotificationChannel(context);
@@ -29,12 +30,7 @@ public class PushAlarm {
                 .setContentText("반경 10M안에 신호등이 있습니다.");
         //System.out.println("알람이 울려야 하는데");
 
-
-/*        MediaPlayer palyer= MediaPlayer.create(context,R.raw.siren);
-        palyer.start();*/
-
-
-
+        alarm(context);
         Vibration(context);
 
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(context);
@@ -43,6 +39,21 @@ public class PushAlarm {
 
 
     }
+    public void alarm(Context context){
+        SharedPreferences pref = context.getSharedPreferences("alarm",context.MODE_PRIVATE);
+        int callValue = pref.getInt("alarm",0);
+        switch(callValue){
+            case 0:palyer= MediaPlayer.create(context,R.raw.siren);break;
+            case 1:palyer= MediaPlayer.create(context,R.raw.signal);break;
+            case 2:palyer= MediaPlayer.create(context,R.raw.apex);break;
+            case 3:palyer= MediaPlayer.create(context,R.raw.chimes);break;
+            case 4:palyer= MediaPlayer.create(context,R.raw.playtime);break;
+            case 5:palyer= MediaPlayer.create(context,R.raw.silk);break;
+        }
+        palyer.start();
+
+    }
+
 
     public void Vibration(Context context){
 

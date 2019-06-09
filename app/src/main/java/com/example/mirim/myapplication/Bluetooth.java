@@ -58,7 +58,7 @@ public class Bluetooth extends Service {
             }
         };
 
-        timer.schedule(timerTask,0,5000);
+        timer.schedule(timerTask,0,10000);
 
     }
 

@@ -28,10 +28,11 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
     private SeekBar seekBar;
     private SeekBar timeSeek;
     private Switch sw;
-    private Button btn_apply;
+    private Button btn_apply,btn_test;
     private Vibrator vib;
     private int strength, second;
     Boolean switchstate;
+    private String alarm;
     MediaPlayer palyer;
 
     private MusicIntentReceiver myReceiver;
@@ -52,6 +53,7 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
         seekBar = (SeekBar)findViewById(R.id.seekBar);
         timeSeek = (SeekBar)findViewById(R.id.timeSeek);
         btn_apply = (Button)findViewById(R.id.btn_apply);
+        btn_test = (Button)findViewById(R.id.btn_test);
         vib = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
 
 
@@ -69,11 +71,10 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
         editor.putInt("second",second);
         //editor.commit();
 
-        btn_apply.setOnClickListener(new View.OnClickListener() {
+        btn_test.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-
 
                 Vibration();
 
@@ -81,10 +82,31 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putInt("strength",strength);
                 editor.putInt("second",second);
+
                 editor.commit();
+
                 palyer.start();
 
 
+
+
+            }
+        });
+
+        btn_apply.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                SharedPreferences sharedPreferences = getSharedPreferences("appData",MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putInt("strength",strength);
+                editor.putInt("second",second);
+
+                editor.commit();
+
+                Toast.makeText(Alarm.this,"설정 완료",Toast.LENGTH_LONG).show();
+                finish();
 
             }
         });
@@ -102,7 +124,13 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
             case 4:palyer= MediaPlayer.create(Alarm.this,R.raw.playtime);break;
             case 5:palyer= MediaPlayer.create(Alarm.this,R.raw.silk);break;
         }
-    }
+        SharedPreferences sharedPreferences = getSharedPreferences("alarm",MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt("alarm",ring_chk);
+    //Toast.makeText(this,Integer.toString(ring_chk),Toast.LENGTH_SHORT).show();
+        editor.apply();
+        editor.commit();
+}
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
@@ -113,7 +141,7 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
         @Override
         public void onReceive(Context context, Intent intent) {
 
-                int state = intent.getIntExtra("state", -1);
+            int state = intent.getIntExtra("state", -1);
 
 
 
@@ -127,16 +155,8 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
 
 
     public void Vibration(){
-        *//*vib = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);*//*
 
-        switchstate = sw.isChecked();
 
-        if(switchstate==true) {
-
-            IntentFilter filter = new IntentFilter(Intent.ACTION_HEADSET_PLUG);
-            registerReceiver(myReceiver, filter);
-
-        }
 
         strength = (int)seekBar.getProgress();
         second = (int)timeSeek.getProgress();
@@ -184,8 +204,6 @@ public class Alarm extends AppCompatActivity implements AdapterView.OnItemSelect
         }
 
 
-        Toast.makeText(Alarm.this,"설정 완료",Toast.LENGTH_LONG).show();
-        finish();
+
     }
 }
-

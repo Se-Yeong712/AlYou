@@ -7,38 +7,61 @@
     android:orientation="vertical"
     tools:context=".Alarm">
 
-    <LinearLayout
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SETTING"
+        android:textColor="#ffca00"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"/>
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
     android:layout_margin="20dp">
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp"
-        android:text="진동세기"
-        android:textSize="20sp"
-        android:textColor="#000000"/>
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:progress="5"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp"
-        android:max="10" />
-
-</LinearLayout>
+        android:layout_height="wrap_content"
+        android:text="진동"
+        android:textColor="#555555"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp">
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
+            android:text="진동세기"
+            android:textSize="25sp"
+            android:textColor="#000000"/>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:progress="5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35dp"
+            android:max="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:text="진동지속시간"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:textColor="#000000"/>
 
 
@@ -47,34 +70,44 @@
             android:id="@+id/timeSeek"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
             android:max="5" />
-
-
-
 
     </LinearLayout>
 
 
+
+</LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_margin="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="알람"
+        android:textColor="#555555"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
             android:text="이어폰 알림 허용"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:textColor="#000000"/>
 
         <Switch
             android:id="@+id/sw"
-            android:layout_margin="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
-
+            android:layout_marginLeft="30dp"
             />
 
     </LinearLayout>
@@ -82,15 +115,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        >
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="알람음 설정"
-            android:textSize="20sp"
-            android:layout_margin="10dp"
+            android:textSize="25sp"
             android:textColor="#000000"
             />
 
@@ -98,17 +130,34 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/spinner"
-
+            android:layout_marginLeft="30dp"
             />
+    </LinearLayout>
 
     </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="30dp">
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_1"
+        android:text="TEST"/>
 
     <Button
         android:id="@+id/btn_apply"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
         android:layout_gravity="center"
-        android:text="APPLY"/>
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/btn_1"
+        android:text="APPLY" />
+</LinearLayout>
 
 </LinearLayout>

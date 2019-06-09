@@ -844,6 +844,7 @@ id btn_alarm
 id btn_apply
 id btn_start
 id btn_stop
+id btn_test
 id btn_town
 id buttonPanel
 id center

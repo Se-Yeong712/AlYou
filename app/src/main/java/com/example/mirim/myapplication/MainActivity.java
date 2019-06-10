@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
 
             if(device_name != null && device_name.length() > 4){
                 Log.d("Bluetooth Name: ", device_name);
-                if(device_name.substring(0,3).equals("Gal")){
+                if(device_name.substring(0,2).equals("HM")){
                     Log.d("test","서비스 Galaxy if문 안");
                     //bluetooth_device.add(device);
                     getRssi(context,intent);
